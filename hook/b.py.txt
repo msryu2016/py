@@ -1,0 +1,59 @@
+
+            def pre_Sleep(event):
+                # Sleep : 0x689db6f0
+                process = event.get_process()
+
+                proc = event.get_process()
+                thread = event.get_thread()
+
+                if proc.get_bits() == 32:
+                   a, b, c, d = thread.read_stack_dwords(9)
+                else:
+                    context = thread.get_context()
+                    Rcx = context['Rcx']
+                    Rdx = context['Rdx']
+
+                """
+                # Access first parameter on the stack: EBP + 4
+                stack_offset = thread.get_sp() + 4
+                # Write the new value at that address (e.g. 0 milliseconds)
+                process.write_dword(stack_offset, 0x00)
+
+                server_name = process.peek_string(lpszServerName, fUnicode=True)
+                print server_name
+                if ismatch(server_name, ".*naver\.com"):
+
+                    # mylogger.log_text(server_name)
+                    mem_write(event, process, "google.com")
+                    set_stack( process, thread, 8, new_addr)
+                """
+                        
+            def pre_SleepEx(event):
+                # SleepEx : 0x689dba44
+                process = event.get_process()
+
+                proc = event.get_process()
+                thread = event.get_thread()
+
+                if proc.get_bits() == 32:
+                   a, b, c, d = thread.read_stack_dwords(9)
+                else:
+                    context = thread.get_context()
+                    Rcx = context['Rcx']
+                    Rdx = context['Rdx']
+
+                """
+                # Access first parameter on the stack: EBP + 4
+                stack_offset = thread.get_sp() + 4
+                # Write the new value at that address (e.g. 0 milliseconds)
+                process.write_dword(stack_offset, 0x00)
+
+                server_name = process.peek_string(lpszServerName, fUnicode=True)
+                print server_name
+                if ismatch(server_name, ".*naver\.com"):
+
+                    # mylogger.log_text(server_name)
+                    mem_write(event, process, "google.com")
+                    set_stack( process, thread, 8, new_addr)
+                """
+                        

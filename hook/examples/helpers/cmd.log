@@ -1,0 +1,8 @@
+[21:21:18.0799] pid 2144 tid 3664: Process creation event at 76F0F7E8 (cmd!start+0x765031aa)
+[21:21:18.0829] pid 2144 tid 3664: Module load event at 76F0F7E8 (ntdll!RtlUserThreadStart)
+[21:21:18.0845] pid 2144 tid 3664: Module load event at 76F0F804 (ntdll!KiFastSystemCallRet)
+[21:21:18.0845] pid 2144 tid 3664: Module load event at 76F0F804 (ntdll!KiFastSystemCallRet)
+[21:21:18.0845] pid 2144 tid 3664: Module load event at 76F0F804 (ntdll!KiFastSystemCallRet)
+[21:21:18.0845] pid 2144 tid 3664: Breakpoint (first chance) at 76F4A443 (ntdll!LdrResolveDelayLoadsFromDll+0x74c)
+[21:21:18.0861] pid 2144 tid 3664: Module load event at 76F0F804 (ntdll!KiFastSystemCallRet)
+[21:21:18.0861] pid 2144 tid 3664: Process termination event at 76F0F804 (ntdll!KiFastSystemCallRet)

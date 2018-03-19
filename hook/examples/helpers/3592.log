@@ -1,0 +1,19 @@
+Exception raised: Traceback (most recent call last):
+  File "C:\python\pds\winappdbg-master\winappdbg-master\examples\helpers\03_debug_log.py", line 47, in main
+    simple_debugger( argv )
+  File "C:\python\pds\winappdbg-master\winappdbg-master\examples\helpers\03_debug_log.py", line 68, in simple_debugger
+    debug.execv( argv )
+  File "C:\Python27\lib\site-packages\winappdbg\debug.py", line 356, in execv
+    return self.execl(lpCmdLine, **kwargs)
+  File "C:\Python27\lib\site-packages\winappdbg\debug.py", line 499, in execl
+    aProcess = self.system.start_process(lpCmdLine, **kwargs)
+  File "C:\Python27\lib\site-packages\winappdbg\process.py", line 4258, in start_process
+    lpStartupInfo   = lpStartupInfo)
+  File "C:\Python27\lib\site-packages\winappdbg\win32\defines.py", line 279, in __call__
+    return fn(*argv, **argd)
+  File "C:\Python27\lib\site-packages\winappdbg\win32\kernel32.py", line 3886, in CreateProcessA
+    _CreateProcessA(lpApplicationName, lpCommandLine, lpProcessAttributes, lpThreadAttributes, bool(bInheritHandles), dwCreationFlags, lpEnvironment, lpCurrentDirectory, byref(lpStartupInfo), byref(lpProcessInformation))
+  File "C:\Python27\lib\site-packages\winappdbg\win32\defines.py", line 156, in RaiseIfZero
+    raise ctypes.WinError()
+WindowsError: [Error 2] 지정된 파일을 찾을 수 없습니다.
+
